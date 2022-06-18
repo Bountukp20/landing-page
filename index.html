@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/0a96adf822.js"></script>
+<style>
+    * {
+    box-sizing: border-box;
+    color: white;
+    }
+    body{
+    background: lightgrey;
+    }
+    .row{
+    margin: 60px;
+    justify-contents: space-around;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: 5%;
+    height: 75%;
+    padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+    .column  {
+        width: 30%;
+        height: 360px;
+    }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column  {
+        width: 100%;
+    }
+    }
+    button{
+    color: orange;
+    background: white;
+    border-style: none;
+    width: 60%;
+    margin-top: 40px;
+    heigth: 100vh;
+    border: none;
+    padding: 4px 26px;
+    text-align: center;
+    border-radius: 40px;
+    }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column" style="background: orange;">
+  <div class="1" style=" border-radius: 50%; width: 30px; height: 30px; background: darkorange; margin: 5px;"><i class="fas fa-car-side" style=" margin-top: 10px; margin-left: 17px; "></i></div>
+  <h2>SEDANS</h2>
+  <p>Choose a sedan for its affordability and excellent fuel economy.Ideal for cruising in the city or on your next road trip.</p>
+  <button>Learn more</button>
+  </div>
+  <div class="column" style="background-color:#20B2AA;">
+  <div class="1" style=" border-radius: 50%; width: 30px; height: 30px; background: darkcyan; margin: 5px;"><i class="fas fa-car-side" style=" margin-top: 10px; margin-left: 17px; "></i></div>
+  <h2>SUVS</h2>
+  <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures. </p>
+  <button style="color:#20B2AA;">Learn more</button>
+  </div>
+  <div class="column" style="background-color:darkcyan;">
+  <div class="1" style=" border-radius: 50%; width: 30px; height: 30px; background: #024d4d; margin: 5px;"><i class="fas fa-car-side" style=" margin-top: 10px; margin-left: 17px; "></i></div>
+  <h2>LUXURY</h2>
+  <p>Cruise in the best car brands without the bloated prices. Enoy the enhaned comfort of a luxury rental and arrive in style.</p>
+  <button style="color: darkcyan;">Learn more</button>
+  </div>
+</div>
+
+</body>
+</html>
